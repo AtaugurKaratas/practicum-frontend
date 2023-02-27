@@ -74,7 +74,7 @@ const CreditGuarantee = (props) => {
 
     return (
         <div className='container'>
-            <h1 className='text-center'>{t('Credit Opsion')}</h1>
+            <h1 className='text-center'>{t('Credit Guarantee')}</h1>
             <form className='form-group'>
                 <Input label={t('Customer Name - Surname')} name="customerNameSurname" id="customerNameSurname" type="text" value={customerNameSurname} disabled={true} />
                 <Input label={t('Price')} name="customerPrice" id="customerPrice" type="text" value={customerPrice} disabled={true} />

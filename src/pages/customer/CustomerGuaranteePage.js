@@ -26,7 +26,7 @@ const CustomerGuarantee = (props) => {
 
     return (
         <div className='container'>
-            <h1 className='text-center mt-5'>{t('Customer Opsion Page')}</h1>
+            <h1 className='text-center mt-5'>{t('Customer Guarantee Page')}</h1>
             <table className='table table-striped m-5 text-center' style={{ border: '1px solid' }}>
                 <thead>
                     <tr>

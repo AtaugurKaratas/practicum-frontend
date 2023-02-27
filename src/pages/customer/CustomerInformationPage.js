@@ -103,7 +103,7 @@ const CustomerInformation = (props) => {
         console.log(customerInfo)
         try {
             await customerSave(customerInfo)
-            getCustomerforLocalStorage()
+            getCustomerforLocalStorage(JSON.parse(localStorage.user).id)
             setSuccess(false);
             setTimeout(successAlert, 3000)
         } catch (error) {

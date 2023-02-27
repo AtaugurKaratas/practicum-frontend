@@ -76,8 +76,8 @@ const CreditRequestPage = (props) => {
 
     const guaranteeCustomer = (
         <div>
-            <Input label={t('Opsion Identity Number')} name="guaranteeIdentityNumber" id="guaranteeIdentityNumber" type="text" onChange={onChange} />
-            <Input label={t('Opsion Price')} name="customerGuaranteePrice" id="customerGuaranteePrice" type="text" onChange={onChange} />
+            <Input label={t('Guarantee Identity Number')} name="guaranteeIdentityNumber" id="guaranteeIdentityNumber" type="text" onChange={onChange} />
+            <Input label={t('Guarantee Price')} name="customerGuaranteePrice" id="customerGuaranteePrice" type="text" onChange={onChange} />
         </div>
     )
 
@@ -87,13 +87,13 @@ const CreditRequestPage = (props) => {
             <div className="form-check">
                 <input className="form-check-input float-none me-3" type="radio" name="flexRadioDefault" id="flexRadioDefault1" defaultChecked={true} onChange={() => setGuaranteeType('GUARANTEE_CUSTOMER')} />
                 <label className="form-check-label" htmlFor="flexRadioDefault1">
-                    {t('Opsion Person')}
+                    {t('Guarantee Customer')}
                 </label>
             </div>
             <div className="form-check">
                 <input className="form-check-input float-none me-3" type="radio" name="flexRadioDefault" id="flexRadioDefault2" onChange={() => setGuaranteeType('GUARANTEE_ASSET')} />
                 <label className="form-check-label" htmlFor="flexRadioDefault2">
-                    {t('Opsion Asset')}
+                    {t('Guarantee Asset')}
                 </label>
             </div>
             <hr />
@@ -111,7 +111,7 @@ const CreditRequestPage = (props) => {
                     <input className="form-check-input float-none me-3" type="checkbox" role="switch" aria-checked="false"
                         id="flexSwitchCheckChecked" defaultChecked={true} onChange={() => setGuarantee(guarantee ? false : true) &&
                             setGuaranteeType(guarantee === false ? null : 'GUARANTEE_CUSTOMER')} />
-                    <label className="form-check-label" htmlFor="flexSwitchCheckChecked">{t('Opsion')}</label>
+                    <label className="form-check-label" htmlFor="flexSwitchCheckChecked">{t('Guarantee')}</label>
                 </div>
                 {guarantee ? guaranteeComponent : null}
                 {(guarantee) && (guaranteeType === 'GUARANTEE_CUSTOMER' ? guaranteeCustomer : guaranteeType === 'GUARANTEE_ASSET' ?
