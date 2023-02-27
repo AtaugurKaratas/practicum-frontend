@@ -1,5 +1,16 @@
 # CREDIT APPLICATION PROJECT
 
+## [Backend](https://github.com/AtaugurKaratas/DefineX-java-spring-practicum) project I made using Spring Boot.
+
+## Used Technologies and Libraries
+* React
+* Redux (Global State Management)
+* React Router (Dynamic Routing)
+* Axios (Communicate with the Backend)
+* React-i18next (Multi-language Support)
+* React Hooks
+* Bootstrap
+
 ## Project Structures
 ```
 📁 project/
